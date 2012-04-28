@@ -1,0 +1,41 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	background-color: #000000;
+}
+
+#wrapper {
+	font-family: "Helvetica Bold", Helvetica, Arial, sans-serif;
+}
+
+#navigation {
+	float: left;
+	margin: 46px;
+	background-color: #FFFFFF;
+	width: 247px;
+	padding: 30px 22px 46px 22px;
+}
+
+#navigation ul {
+	list-style: none;
+	padding: 10px 0 0 0;
+	font-size: 0.95em;
+	font-weight: bold;
+}
+
+#navigation ul a {
+	text-decoration: none;
+	color: #000;
+}
+
+#navigation ul a:hover {
+	font-weight: normal;
+}
+
+.nav_header {
+	font-size: 2em;
+	
+}

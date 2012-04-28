@@ -4,12 +4,12 @@ var browserWidth, browserHeight;
 
 $(document).ready(function(){
    
- });
+});
  
- function setBrowserWidth() {
+function setBrowserWidth() {
 	browserWidth = $(window).width();
- }
+}
  
- function setBrowserHeight() {
+function setBrowserHeight() {
 	browserHeight = $(window).height();
- }
+}
