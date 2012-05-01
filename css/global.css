@@ -1,0 +1,81 @@
+/* CSS Reset */
+*
+{
+	margin: 0px;
+	padding: 0px;
+}
+
+@font-face
+{
+	font-family: "HelveticaBold";
+    src: url(../fonts/HELVETICANEUELTCOM-BDEX.ttf);
+}
+
+@font-face 
+{
+    font-family: "HelveticaLight";
+    src: url(../fonts/HELVETICANEUELTCOM-TH.ttf);
+}
+
+body > *
+{
+	font-family: "HelveticaLight", Helvetica, Arial, sans-serif;
+	font-size: 0.875em;
+	line-height: 11pt;
+}
+	
+#navigation
+{
+	position: absolute;
+	top: 46px;
+	left: 46px;
+	background-color: #FFF;
+	width: 247px;
+	overflow: none;
+	padding-bottom: 60px;
+}
+
+#navigation > *
+{
+	margin: 22px 22px 0 22px;
+	list-style: none;
+	float: left;
+}
+
+#logo 
+{
+	width: 202px;
+	height: 26px;
+	margin-top: 30px;
+	background: #FFF url('../img/RKD_Logo.png') no-repeat;
+}
+
+#navlist
+{
+	padding: 10px 0;
+}
+
+.bold
+{
+	font-family: "HelveticaBold", Helvetica, Arial, sans-serif;
+}
+
+#navlist a 
+{
+	text-decoration: none;
+	color: #000;
+}
+
+#navlist a:hover 
+{
+	font-weight: normal;
+}
+
+.footer 
+{
+	color: white;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	margin: 0 46px 23px 0;
+}

@@ -5,5 +5,5 @@
 }
 
 body {
-	background-color: #000000;
+	background: #000000 url('../img/splash.png') no-repeat top left;
 }

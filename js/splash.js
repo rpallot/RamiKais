@@ -1,15 +1,8 @@
 /////////////////////////////////////////////////////////////////////////////
 //
-var browserWidth, browserHeight;
 
-$(document).ready(function(){
-   
-});
- 
-function setBrowserWidth() {
-	browserWidth = $(window).width();
+function doOnClickBody() {
+window.location = "home.html"
 }
- 
-function setBrowserHeight() {
-	browserHeight = $(window).height();
-}
+
+document.onclick = doOnClickBody;
