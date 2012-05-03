@@ -8,42 +8,46 @@
 	<meta name="robots" content="index,follow" />
 	<link rel="stylesheet" type="text/css" href="css/global.css" />
 	<link rel="stylesheet" type="text/css" href="css/works.css" />
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script type="text/javascript" src="js/works.js"></script>
 </head>
 
 <body>
 
-	<div id="wrapper">
+<div id="wrapper">
+
+	<div id="navigation">
 	
-		<div id="navigation">
-			<div id="logo"></div>
-				<ul id="navlist">
-					<li><a href="about.html">About</a></li>
-					<li><a href="works.html">Selected Works</a> +</li>
-					<li><a href="contact.html">Contact</a></li>
-				</ul>
-			
-				<ul id="worksNavigation">
-					<li>Cardinia Transport Guide</li>
-					<li>Revolutionary Thoughts Book</li>
-					<li>Ambit Magazine</li>
-					<li>Simon Homes Brochure</li>
-					<li>Go Straight Business Card</li>
-					<li>Babylon Identity</li>
-				</ul>
-				
-				<div id="controls">
-				
-					<span>< </span><span id="current"> 1 </span><span> \ </span><span id="total"> 2 </span><span> ></span>
-				
-				</div>
-			
-		</div>
+		<div id="logo"></div>
+
+		<ul class="bold" id="navlist">
+			<li><a href="about.html">About</a></li>
+			<li><a href="works.html">Selected Works +</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+	
+		<ul id="worksNavigation">
+			<li><a id="0" class="current" href="#">Cardinia Transport Guide +</a></li>
+			<li><a id="1" href="#">Revolutionary Thoughts Book</a></li>
+			<li><a id="2" href="#">Ambit Magazine</a></li>
+			<li><a id="3" href="#">Simon Homes Brochure</a></li>
+			<li><a id="4" href="#">Go Straight Business Card</a></li>
+			<li><a id="5" href="#">Babylon Identity</a></li>
+		</ul>
 		
-		<div class="footer">
-			&copy; Rami Kais 2012
+		<div id="controls">
+			<span id="previous"><a href="#"><</a> </span><span id="current">1</span><span> \ </span><span id="total"></span><span id="next"> <a href="#">></a></span>
 		</div>
+			
+		<p id="testarea"></p> 
 	
 	</div>
+	
+	<div class="footer">
+		&copy; Rami Kais 2012
+	</div>
+
+</div>
 
 </body>
 </html>
