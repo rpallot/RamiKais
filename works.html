@@ -54,6 +54,20 @@
 				$.backstretch(path + '.png');
 			});
 			
+			$('#previous > a').click(function() {
+				if( currentImage == 1 ){
+					currentImage = totalImages[currentIndex];
+					$('#current').text(currentImage);
+					path = 'img/' + currentGallery + '/' + currentGallery + '' + currentImage;
+				}else{
+					currentImage = currentImage - 1;
+					$('#current').text(currentImage);
+					path = 'img/' + currentGallery + '/' + currentGallery + '' + currentImage;
+				}
+				path = 'img/' + currentGallery + '/' + currentGallery + '' + currentImage;
+				$.backstretch(path + '.png');
+			});
+			
 		});
 
 		function removeMarker(currentText) {
