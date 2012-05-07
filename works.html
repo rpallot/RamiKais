@@ -8,14 +8,73 @@
 	<meta name="robots" content="index,follow" />
 	<link rel="stylesheet" type="text/css" href="css/global.css" />
 	<link rel="stylesheet" type="text/css" href="css/works.css" />
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-	<script type="text/javascript" src="js/works.js"></script>
+	<script type="text/javascript" src="js/jquery-1.6.4.min.js"></script>
+	<script type="text/javascript" src="js/jquery.backstretch.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+		
+			var totalImages = [4, 4, 4, 2, 2, 2];
+			var imageTitles = ['cardinia','revolutionary','ambit','simonhomes','gostraight','babylon'];
+			var currentIndex = 0;
+			var currentGallery = imageTitles[currentIndex];
+			var currentImage = 1;
+			var path = 'img/' + currentGallery + '/' + currentGallery + '' + currentImage;
+			$.backstretch(path + '.png');
+		
+			$('#total').text(totalImages[currentIndex]);
+			
+			$('#worksNavigation a').click(function() { 
+			
+				if(!($(this).hasClass('current'))) {
+					removeMarker(this);
+					$('#current').text(1);
+					currentImage = 1;
+					$(this).text($(this).text() + ' +');
+					$(this).addClass('current');
+					currentGallery = imageTitles[parseInt($(this).attr('id'))];
+					path = 'img/' + currentGallery + '/' + currentGallery + '' + currentImage;
+				}
+				currentIndex = parseInt($(this).attr('id'));
+				$('#total').text(totalImages[currentIndex]);
+				$.backstretch(path + '.png');
+				
+			});
+			
+			$('#next > a').click(function() {
+				if( currentImage == totalImages[currentIndex] ){
+					currentImage = 1;
+					$('#current').text(currentImage);
+					path = 'img/' + currentGallery + '/' + currentGallery + '' + currentImage;
+				}else{
+					currentImage = currentImage + 1;
+					$('#current').text(currentImage);
+					path = 'img/' + currentGallery + '/' + currentGallery + '' + currentImage;
+				}
+				path = 'img/' + currentGallery + '/' + currentGallery + '' + currentImage;
+				$.backstretch(path + '.png');
+			});
+			
+		});
+
+		function removeMarker(currentText) {
+			
+			var linkText = $('a.current').text();
+				linkText = linkText.substring(0, (linkText.length - 2))
+			$('a.current').text(linkText);
+			$('a.current').removeClass('current');
+			
+		}
+
+		function changeImage(nextImageIndex) {
+
+			
+
+		}
+	</script>
 </head>
 
 <body>
 
-<div id="wrapper">
-	<div id="img" class="curwork"></div>
 	<div id="navigation">
 	
 		<div id="logo"></div>
@@ -39,16 +98,11 @@
 			<span id="previous"><a href="#">< </a></span><span id="current">1</span><span> \ </span><span id="total"></span><span id="next"><a href="#"> ></a></span>
 		</div>
 		
-		<p id="balls"></p>
-		<p id="cocks"></p>
-	
 	</div>
 	
 	<div class="footer">
 		&copy; Rami Kais 2012
 	</div>
-
-</div>
 
 </body>
 </html>

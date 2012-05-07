@@ -2,9 +2,10 @@ var totalImages = [4, 4, 4, 2, 2, 2];
 var imageTitles = ['cardinia','revolutionary','ambit','simonhomes','gostraight','babylon'];
 var currentIndex = 0;
 var currentGallery = imageTitles[0];
+//$.backstretch('img/' + currentGallery + '/' + currentGallery + currentIndex + '.png');
 
 $(document).ready(function() {
-	
+
 	$('#total').text(totalImages[currentIndex]);
 	
 	$('#worksNavigation a').click(function() { 
@@ -20,23 +21,23 @@ $(document).ready(function() {
 	});
 	
 	$('#next > a').click(function() {
-
 		
 	
 	});
 	
 });
 
-function removeMarker(currentClass) {
+function removeMarker(currentText) {
 	
+	var linkText = $('a.current').text();
+		linkText = linkText.substring(0, (linkText.length - 2))
+	$('a.current').text(linkText);
+	$('a.current').removeClass('current');
 	
-
-}
-
-function checkForCurrent() {
-
 }
 
 function changeImage(nextImageIndex) {
+
+	
 
 }
