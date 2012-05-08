@@ -19,7 +19,7 @@
 			var currentGallery = imageTitles[currentIndex];
 			var currentImage = 1;
 			var path = 'img/' + currentGallery + '/' + currentGallery + '' + currentImage;
-			$.backstretch(path + '.png');
+			$.backstretch(path + '.jpg');
 		
 			$('#total').text(totalImages[currentIndex]);
 			
@@ -36,7 +36,7 @@
 				}
 				currentIndex = parseInt($(this).attr('id'));
 				$('#total').text(totalImages[currentIndex]);
-				$.backstretch(path + '.png');
+				$.backstretch(path + '.jpg');
 				
 			});
 			
@@ -51,7 +51,7 @@
 					path = 'img/' + currentGallery + '/' + currentGallery + '' + currentImage;
 				}
 				path = 'img/' + currentGallery + '/' + currentGallery + '' + currentImage;
-				$.backstretch(path + '.png');
+				$.backstretch(path + '.jpg');
 			});
 			
 			$('#previous > a').click(function() {
@@ -65,7 +65,7 @@
 					path = 'img/' + currentGallery + '/' + currentGallery + '' + currentImage;
 				}
 				path = 'img/' + currentGallery + '/' + currentGallery + '' + currentImage;
-				$.backstretch(path + '.png');
+				$.backstretch(path + '.jpg');
 			});
 			
 		});
@@ -77,12 +77,6 @@
 			$('a.current').text(linkText);
 			$('a.current').removeClass('current');
 			
-		}
-
-		function changeImage(nextImageIndex) {
-
-			
-
 		}
 	</script>
 </head>
