@@ -5,21 +5,9 @@
 	padding: 0px;
 }
 
-@font-face
-{
-	font-family: "HelveticaBold";
-    src: url(../fonts/HELVETICANEUELTCOM-BDEX.ttf);
-}
-
-@font-face 
-{
-    font-family: "HelveticaLight";
-    src: url(../fonts/HELVETICANEUELTCOM-TH.ttf);
-}
-
 body > *
 {
-	font-family: "HelveticaLight", Helvetica, Arial, sans-serif;
+	font-family: Helvetica, Arial, sans-serif;
 	font-size: 0.8em;
 	line-height: 14pt;
 }
@@ -38,7 +26,7 @@ body > *
 	background-color: #FFF;
 	width: 247px;
 	overflow: none;
-	padding-bottom: 60px;
+	padding-bottom: 30px;
 }
 
 #navigation > *
@@ -63,12 +51,8 @@ body > *
 
 .bold
 {
-	font-family: "HelveticaBold", Helvetica, Arial, sans-serif;
-}
-
-#navlist a:hover 
-{
-	font-weight: normal;
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: bold;
 }
 
 .footer 
