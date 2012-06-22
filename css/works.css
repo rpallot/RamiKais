@@ -1,20 +1,3 @@
 body {
 	overflow: hidden;
 }
-
-#img.curwork {
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	top: 0;
-	left: 0;
-	overflow: none;
-	background: #000 url("../img/cardinia/cardinia-1.png");
-}
-
-#loading {
-	display: block;
-	height: 23px;
-	width: 202px;
-	background: #FFF url('../img/loader.gif') no-repeat top left;
-}

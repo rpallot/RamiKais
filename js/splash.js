@@ -1,8 +1,0 @@
-/////////////////////////////////////////////////////////////////////////////
-//
-
-function doOnClickBody() {
-window.location = "home.html"
-}
-
-document.onclick = doOnClickBody;

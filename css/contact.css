@@ -1,8 +1,47 @@
 #navigation
 {
-	height: 149px;
+	width: 248px;
 }
 
 .footer {
 	color: black;
 }
+/*Contact form*/
+/*#formail {
+	width: 238px;
+}
+
+#formail label {
+	display: block;
+	margin: 5px 0;
+}
+
+#formail input {
+	width: 198px;
+}
+
+#text {
+	width: 198px;
+	resize: none;
+}
+
+#sendmail {
+	margin-top: 10px;
+	display: block;
+}
+
+#response {
+	display: none;
+	border: 1px solid #ccc;
+	background: #FFFFA0;
+	padding: 5px;
+	width: 238px;
+}
+
+
+.button {
+	border: none;
+	background: #FFF;
+	padding: 5px 0 0 0;
+}
+/*

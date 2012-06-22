@@ -12,22 +12,19 @@
 	<script type="text/javascript" src="js/jquery.backstretch.min.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function() {
-			$('#loading').show();
 			var totalImages = [4, 4, 4, 2, 2, 2];
 			var imageTitles = ['cardinia','revolutionary','ambit','simonhomes','gostraight','babylon'];
 			var currentIndex = 0;
 			var currentGallery = imageTitles[currentIndex];
 			var currentImage = 1;
 			var path = 'img/' + currentGallery + '/' + currentGallery + '' + currentImage;
-			$.backstretch(path + '.jpg');
-			$('#loading').hide();
+			$.backstretch(path + '.jpg', {speed: 500});
 		
 			$('#total').text(totalImages[currentIndex]);
 			
 			$('#worksNavigation a').click(function() { 
 			
 				if(!($(this).hasClass('current'))) {
-					$('#loading').show();
 					removeMarker(this);
 					$('#current').text(1);
 					currentImage = 1;
@@ -38,13 +35,10 @@
 				}
 				currentIndex = parseInt($(this).attr('id'));
 				$('#total').text(totalImages[currentIndex]);
-				$.backstretch(path + '.jpg');
-				$('#loading').hide();
-				
+				$.backstretch(path + '.jpg', {speed: 500});
 			});
 			
 			$('#next > a').click(function() {
-				$('#loading').show();
 				if( currentImage == totalImages[currentIndex] ){
 					currentImage = 1;
 					$('#current').text(currentImage);
@@ -55,12 +49,10 @@
 					path = 'img/' + currentGallery + '/' + currentGallery + '' + currentImage;
 				}
 				path = 'img/' + currentGallery + '/' + currentGallery + '' + currentImage;
-				$.backstretch(path + '.jpg');
-				$('#loading').hide();
+				$.backstretch(path + '.jpg', {speed: 500});
 			});
 			
 			$('#previous > a').click(function() {
-				$('#loading').show();
 				if( currentImage == 1 ){
 					currentImage = totalImages[currentIndex];
 					$('#current').text(currentImage);
@@ -71,8 +63,7 @@
 					path = 'img/' + currentGallery + '/' + currentGallery + '' + currentImage;
 				}
 				path = 'img/' + currentGallery + '/' + currentGallery + '' + currentImage;
-				$.backstretch(path + '.jpg');
-				$('#loading').hide();
+				$.backstretch(path + '.jpg', {speed: 500});
 			});
 			
 		});
@@ -112,8 +103,6 @@
 		<div id="controls">
 			<span id="previous"><a href="#">< </a></span><span id="current">1</span><span> \ </span><span id="total"></span><span id="next"><a href="#"> ></a></span>
 		</div>
-		
-		<div id="loading"></div>
 		
 	</div>
 	

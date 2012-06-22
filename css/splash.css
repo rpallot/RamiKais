@@ -9,11 +9,11 @@ body {
 }
 
 #splash {
-	background: #000 url('../img/splash.png') no-repeat top left;
+	background: #000 url('../img/Splash.png') no-repeat top left;
 	position:absolute;
 	top: 50%;
 	left: 50%;
-	width: 1212px;
+	width: 100%;
 	height: 200px;
 	margin-top: -100px;
 	margin-left: -606px;
